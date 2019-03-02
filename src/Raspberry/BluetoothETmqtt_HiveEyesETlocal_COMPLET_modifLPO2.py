@@ -32,15 +32,8 @@ sensor_dataH = {"Humidite" : 0}
 lemaBkr_hiveeyes = mqtt.Client() #vers Hiveeyes
 lemaBkr_local = mqtt.Client()    #vers le PC en local (une fois installe mosquitto on peut activer l ecoute a partir d un terminal  : mosquitto_sub  -t "lecanal/#")
 
-username = "lorenzo.pons@free.fr"
-password = "LarvEigEdsinLyg"
-#ATTENTION si j utilise mon compte il faut envoyer les donnees a une instance qui m'appartienne
-#Owner-ID: eb87a9f4-b25a-4c7c-a29c-c05bb80f1f2c 
-#sinon le systeme detecte que c est qqn d autre qui fait les modis et trouve des conflits
-
-#username = "geraldine@lema-bkr.com"
-#password = "ontAwvyoHidar"
-#Owner-ID : 57eaf23a-968f-4740-b747-137e3ab00580
+username = "youremail"
+password = "yourpwd"
 lemaBkr_hiveeyes.username_pw_set(username, password) 
 
 
